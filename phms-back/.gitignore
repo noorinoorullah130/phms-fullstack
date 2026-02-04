@@ -1,0 +1,8 @@
+# Backend ignore
+
+node_modules/
+.env
+.env.*
+logs/
+*.log
+dist/

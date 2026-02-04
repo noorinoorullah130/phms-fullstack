@@ -1,0 +1,42 @@
+/* Footer.css */
+.footer {
+    background: #f8fafc;
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    margin-top: auto;
+    height: 5vh;
+
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+}
+
+.copyright {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.author-name {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+/* Hover effect for author name */
+.author-name:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 0.75rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
