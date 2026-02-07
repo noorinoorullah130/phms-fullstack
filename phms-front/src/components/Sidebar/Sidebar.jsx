@@ -12,7 +12,6 @@ import {
     MdPeople,
     MdReceipt,
     MdSettings,
-    MdHelp,
     MdLogout,
 } from "react-icons/md";
 
@@ -72,12 +71,6 @@ const Sidebar = () => {
             label: "Settings",
             path: "settings",
         },
-        {
-            id: "help",
-            icon: <MdHelp />,
-            label: "Help",
-            path: "help",
-        },
     ];
 
     const handleLogout = () => {
@@ -94,7 +87,7 @@ const Sidebar = () => {
                 <div className="nav-section">
                     <h3 className="section-title">MAIN MENU</h3>
                     <ul className="nav-menu">
-                        {menuItems.slice(0, 8).map((item) => (
+                        {menuItems.map((item) => (
                             <li key={item.id}>
                                 <NavLink
                                     to={item.path}
@@ -113,31 +106,7 @@ const Sidebar = () => {
                                 </NavLink>
                             </li>
                         ))}
-                    </ul>
-                </div>
 
-                <div className="nav-section">
-                    <h3 className="section-title">SYSTEM</h3>
-                    <ul className="nav-menu">
-                        {menuItems.slice(8).map((item) => (
-                            <li key={item.id}>
-                                <NavLink
-                                    to={item.path}
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link active"
-                                            : "nav-link"
-                                    }
-                                >
-                                    <span className="nav-icon">
-                                        {item.icon}
-                                    </span>
-                                    <span className="nav-label">
-                                        {item.label}
-                                    </span>
-                                </NavLink>
-                            </li>
-                        ))}
                         {/* Logout Button */}
                         <li>
                             <button

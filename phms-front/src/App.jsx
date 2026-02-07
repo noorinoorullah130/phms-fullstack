@@ -13,7 +13,6 @@ import Reports from "./pages/Reports/Reports";
 import Staff from "./pages/Staff/Staff";
 import Billing from "./pages/Billing/Billing";
 import Settings from "./pages/Settings/Settings";
-import Help from "./pages/Help/Help";
 
 function App() {
     return (
@@ -34,7 +33,6 @@ function App() {
                     <Route path="staff" element={<Staff />} />
                     <Route path="billing" element={<Billing />} />
                     <Route path="settings" element={<Settings />} />
-                    <Route path="help" element={<Help />} />
                 </Route>
             </Routes>
         </div>
